@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaun's Farm Love</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      /* Minimal CSS for custom animation */
+      .fade-in {
+        animation: fadeIn 2s ease-in forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body class="bg-green-50 font-sans text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-green-700 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Shaun's Farm Dream</h1>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#animals" class="hover:underline">Animals</a></li>
+          <li><a href="#plan" class="hover:underline">Farm Plan</a></li>
+          <li><a href="#references" class="hover:underline">References</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto p-6 text-center fade-in">
+      <h2 class="text-4xl font-extrabold mb-4">I Love Farm Animals!</h2>
+      <p class="text-lg">Inspired by Shaun the Sheep, I dream of building a peaceful, loving farm full of happy animals.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Shaun_the_Sheep_Character.png" alt="Shaun the Sheep" class="mx-auto my-6 w-48" />
+    </section>
+
+    <!-- Sidebar + Main Content -->
+    <div class="container mx-auto flex flex-col md:flex-row">
+      <aside class="w-full md:w-1/4 p-4 bg-green-100 mb-4 md:mb-0">
+        <h3 class="text-xl font-semibold mb-2">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#cows" class="text-green-700 hover:underline">Cows</a></li>
+          <li><a href="#pigs" class="text-green-700 hover:underline">Pigs</a></li>
+          <li><a href="#chickens" class="text-green-700 hover:underline">Chickens</a></li>
+        </ul>
+      </aside>
+      <main class="w-full md:w-3/4 p-4">
+        <!-- Blog Cards: Animals -->
+        <section id="animals" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white p-4 rounded shadow">
+            <h4 id="cows" class="text-xl font-bold mb-2">Cows</h4>
+            <p>I love cows for their calm nature and the milk they provide. My future farm will have open pastures for them to roam freely.</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 id="pigs" class="text-xl font-bold mb-2">Pigs</h4>
+            <p>Pigs are intelligent and social animals. I plan to build a mud park for them to play and stay cool in summer!</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 id="chickens" class="text-xl font-bold mb-2">Chickens</h4>
+            <p>My farm will have chickens of many breeds. Fresh eggs every day and a coop with lots of sunlight!</p>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="plan" class="mt-8">
+          <h3 class="text-2xl font-bold mb-4">Farm Plan - FAQ</h3>
+          <div class="space-y-4">
+            <details class="bg-white p-4 rounded shadow">
+              <summary class="font-semibold cursor-pointer">Where will your farm be?</summary>
+              <p class="mt-2">I'm planning to settle in a peaceful countryside, possibly in southern Poland or western Ukraine.</p>
+            </details>
+            <details class="bg-white p-4 rounded shadow">
+              <summary class="font-semibold cursor-pointer">How will you care for the animals?</summary>
+              <p class="mt-2">Daily care with lots of love, routine vet visits, and natural, fresh food.</p>
+            </details>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- References Section -->
+    <section id="references" class="container mx-auto p-6 bg-green-200 mt-6">
+      <h3 class="text-2xl font-bold mb-4">References</h3>
+      <ul class="list-disc list-inside">
+        <li>Shaun the Sheep official site: <a href="https://www.shaunthesheep.com" class="text-green-700 underline">shaunthesheep.com</a></li>
+        <li>My personal farm inspiration Pinterest board</li>
+        <li>Books: "The Good Good Pig" by Sy Montgomery</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white p-4 mt-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Shaun's Farm Dream. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
